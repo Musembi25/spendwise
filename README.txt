@@ -3,7 +3,7 @@ SPENDWISE — OFFLINE-FIRST MULTI-USER MONEY TRACKER
 What is included
 - index.html / api-client.js: responsive app, offline local storage, themes, debts, purchase planner, and reports
 - server.js: shared Node.js API handler and optional local development server
-- api/[...path].js: Vercel serverless API entry point
+- api/[...path].js and api/auth/: Vercel serverless API entry points, including explicit nested account routes
 - vercel.json: Vercel function configuration
 - .env.example: local server configuration template
 - supabase.sql: private per-account JSON data table and row-level security
@@ -11,7 +11,7 @@ What is included
 
 Deploy to Vercel
 1. Push this project to a GitHub repository. Keep `.env` out of Git.
-2. In Vercel, choose Add New Project and import the repository. The project uses Vercel's static file hosting and the `api/[...path].js` serverless function; do not configure it as a long-running custom server.
+2. In Vercel, choose Add New Project and import the repository. The project uses Vercel's static file hosting and serverless functions under `api/`, including explicit account sign-up/sign-in/sign-out routes; do not configure it as a long-running custom server.
 3. Add these Environment Variables in Vercel Project Settings for Production (and Preview if needed):
    - SUPABASE_URL: your Supabase Project URL
    - SUPABASE_ANON_KEY: your Supabase public anon / publishable key
