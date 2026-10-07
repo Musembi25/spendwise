@@ -1,0 +1,13 @@
+{
+  "name": "spendwise",
+  "version": "1.0.0",
+  "private": true,
+  "description": "SpendWise offline-first spending tracker and Vercel API",
+  "scripts": {
+    "start": "node server.js",
+    "vercel-build": "node --check server.js && node --check 'api/[...path].js'"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

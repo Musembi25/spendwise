@@ -1,0 +1,13 @@
+{
+  "name": "SpendWise — Offline Spending Tracker",
+  "short_name": "SpendWise",
+  "description": "A private, offline-first spending and budget tracker.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f6f2ff",
+  "theme_color": "#7657e8",
+  "orientation": "portrait-primary",
+  "icons": [
+    {"src":"give-money.png","sizes":"512x512","type":"image/png","purpose":"any"}
+  ]
+}
